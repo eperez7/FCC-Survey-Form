@@ -4,6 +4,8 @@
 <head>
 	<title>FreeCodeCamp Survey</title>
 	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="src/styles.css">
+
 </head>
 
 <body>
@@ -14,48 +16,48 @@
 		</div>
 		<div id="survey-form">
 			<form>
-				<label for="name" id="name-label">Name:</label>
+<div class="personal-info">
+				<label for="name" id="name-label">Name</label>
 				<input type="text" placeholder="John Doe" id="name" required>
 
-				<label for="email" id="email-label">Email:</label>
+				<label for="email" id="email-label">Email</label>
 				<input type="email" placeholder="johndoe@gmail.com" id="email" required>
 
-				<label for="number" id="number-label">Your age:</label>
-				<input type="number" id="number" min="10" max="101" placeholder="i.e 25" required>
+				<label for="number" id="number-label">Your age</label>
+				<input type="number" id="number" min="10" max="101" placeholder="25" required>
 
-				<label for="dropdown" id="dropdown-label">Dropdown</label>
+				<label for="dropdown" id="dropdown-label">What do you enjoy the most of FreeCodeCamp?</label>
 				<select id="dropdown" required>
-					<option value="">Option 1</option>
-					<option value="">Option 2</option>
-					<option value'"">Option 3</option>
+
+					<option value="">Easy to understand lessons</option>
+					<option value="">Building projects</option>
+					<option value="">The community</option>
 				</select>
-				
-				<p>Gender:</p>
-					<label for="male" id="male-label">Male</label>
-					<input type="radio" id="male" name="gender" required>
-					<label for="female" id="female-label">Female</label>
-					<input type="radio" id="female" name="gender">
-					<label for="other" id="other-label">Other</label>
-					<input type="radio" id="other" name="gender">
-
+</div>
+				<p>Would you recommend FreeCodeCamp to others?</p>
+				<div class="radio">
+					<label for="absolutely" id="absolutely-label"><input type="radio" id="male" name="rate" required>Absolutely</label>
+					<label for="maybe" id="maybe-label"><input type="radio" id="maybe" name="rate">Maybe</label>
+					<label for="no" id="no-label"><input type="radio" id="no" name="rate">No</label>
+				</div>
+				<div class="checkbox">
 				<p>What do you think needs to be improved? (Check any that apply)</p>
-					<label for="option1" id="option1-label">Option1</label>
-					<input type='checkbox' id="option1">
-					<label for="option2" id="option2-label">Option2</label>
-					<input type="checkbox" id="option2">
-					<label for="option3" id="option3-label">Option3</label>
-					<input type="checkbox" id="option3">
+					<label for="front-end" id="front-end-label"><input type='checkbox' id="front-end">Front-end Projects</label>
+					<label for="back-end" id="back-end-label"><input type="checkbox" id="back-end">Back-end Projects</label>
+					<label for="videos" id="videos-label"><input type="checkbox" id="videos">Videos</label>
+					<label for="challenges" id="challenges-label"><input type="checkbox" id="challenges">Challenges</label>
+					<label for="exp" id="exp-label"><input type="checkbox" id="exp">Explanations</label>
+					<label for="courses" id="courses-label"><input type="checkbox" id="courses">Additional Courses</label>
+				</div>
 
-				<label for="comments" id="text-area-label">Comments:</label>
-				<textarea rows="5" cols="40" id="comments" placeholder="Your feedback"></textarea>
+				<label for="comments" id="text-area-label">Any comments or suggestions?</label>
+				<textarea rows="5" cols="40" id="comments" placeholder="Enter your feedback here"></textarea>
 
 				<input type="submit">
 			</form>
 		</div>
 	</div>
 
-	<script src="src/index.js">
-	</script>
 </body>
 
 </html>
