@@ -1,10 +1,45 @@
 body {
   font-family: sans-serif;
+  background-color: green;
 }
-
+.page-header {
+  text-align: center;
+}
+#survey-form {
+  background-color: rgb(236, 236, 5);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
 .personal-info label {
   display: block;
+  padding: 5px 0;
+}
+.personal-info input {
+  width: 100%;
+}
+.personal-info select {
+  width: 100%;
+}
+
+.checkbox {
+  padding-bottom: 15px;
 }
 .checkbox label {
   display: block;
+  padding-bottom: 7px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+textarea {
+  display: block;
+  width: 100%;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(1, 211, 1);
+  margin-top: 3px;
 }
