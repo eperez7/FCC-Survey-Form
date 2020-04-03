@@ -1,3 +1,10 @@
 body {
   font-family: sans-serif;
 }
+
+.personal-info label {
+  display: block;
+}
+.checkbox label {
+  display: block;
+}
